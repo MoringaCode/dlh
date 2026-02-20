@@ -1,0 +1,53 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+
+# Moodle runtime files
+moodle/config.php
+moodledata/
+moodle/localcache/
+moodle/cache/
+moodle/temp/
+
+# Ignore generated/built images; keep Dockerfiles and compose files
+*.tar
+
+# Keep nginx config, ignore any generated logs if mounted locally
+nginx/logs/
+nginx/*.log
+
+# Ignore any local DB dumps unless intentionally committed
+*.sql
+*.sql.gz
+dumps/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# VSCode
+.vscode/
+!.vscode/extensions.json
+
+# JetBrains IDEs (PhpStorm, WebStorm, etc.)
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+
+# Logs & Temp
+*.log
+tmp/
+temp/
